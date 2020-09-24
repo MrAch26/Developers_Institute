@@ -1,0 +1,23 @@
+{%extends 'home.html'%}
+
+
+{% block content %}
+
+
+<!-- todo : ADD BORDER IF WHITE -->
+{% if color != "white" %}
+<div id="circle" class="circle" style="background-color: {{color}}"></div>
+<p>The colors is: {{color}}</p>
+<!--<script>-->
+<!--    document.getElementById('circle').style.border="1px border black"-->
+<!--</script>-->
+{% else  %}
+<div class="circle" style="background-color:{{color}}; border: 1px solid black;"></div>
+<p>The colors is: {{color}} you might not see it ;)</p>
+{% endif %}
+
+
+<a href="/">Home</a>
+
+
+{% endblock content %}

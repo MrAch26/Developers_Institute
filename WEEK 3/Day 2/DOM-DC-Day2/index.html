@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM-DC1-Day2</title>
+    <style>
+      button {
+        background: #ff0000;
+        background: linear-gradient(#db9a12, #ff0000 50%, #db9a12);
+        border: 4px solid #556699;
+        border-radius: 16px;
+        padding: 20px 45px;
+        color: #ffffff;
+        font: normal bold 28px/1 "Calibri", sans-serif;
+        text-shadow: 1px 1px #000000;
+        margin-top: 20vh;
+        margin-left: 20vw;
+      }
+    </style>
+  </head>
+  <body>
+
+    <nav>
+        <a href="index1.html"><----Mad Libsss</a>
+    </nav>
+
+        <button>DON'T CLICK HERE !</button>
+    
+       
+    
+    <script>
+        
+      let button = document.querySelector("button");
+
+      button.addEventListener("click", yellow);
+      button.addEventListener("mouseover", bigText);
+      button.addEventListener("mouseout", normalText);
+
+      let div = document.createElement("div");
+      document.body.appendChild(div);
+    //   div.style.display = "flex";
+
+      function yellow() {
+        if (document.body.style.backgroundColor != "yellow") {
+          alert("I told you not to... Now DON'T click again !");
+          document.body.style.backgroundColor = "yellow";
+        } else {
+          var counter = 0;
+          var i = setInterval(function () {
+            // do your thing
+            dot = document.createElement("p");
+            div.appendChild(dot);
+            dot.innerHTML = "YA MANIAK . WHY YOU DID IT ?";
+            dot.style.fontSize = "5rem";
+
+            counter++;
+            if (counter === 20) {
+              clearInterval(i);
+            }
+          }, 200);
+        }
+      }
+      function bigText() {
+        button.style.fontSize = "5rem";
+      }
+      function normalText() {
+        button.style.fontSize = "28px";
+      }
+    </script>
+  </body>
+</html>

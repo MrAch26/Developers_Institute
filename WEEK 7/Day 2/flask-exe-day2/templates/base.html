@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My marketplace</title>
+
+    {% block css %}
+    {% endblock css %}
+</head>
+<body>
+
+<!-- NavBar -->
+{% include 'partials/navbar.html' %}
+
+{% block content %}
+{% endblock content %}
+
+
+{% block js %}
+
+<script src="{{ url_for('static', filename='js/nav.js') }}"></script>
+
+{% endblock js %}
+</body>
+</html>

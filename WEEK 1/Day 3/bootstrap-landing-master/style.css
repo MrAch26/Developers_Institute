@@ -1,0 +1,17 @@
+body {
+    padding-top: 56px;
+}
+
+.jumb-image{
+    background-image: url("/Users/daniel.ach/Desktop/day3/bootstrap-landing/image_1.jpeg") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.jumbotron {
+    background: no-repeat center;
+}
+.btn-primary {
+    background-color: #c60063;
+    border-color: #c60063;
+}

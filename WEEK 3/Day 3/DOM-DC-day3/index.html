@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-DC-day3</title>
+</head>
+<body>
+    <h2>Daily Challenge Week 3 Day 3</h1>
+    ONLY Letters : <input type="text"><br>
+    ONLY Numbers : 
+    
+    
+    <script>
+        var input = document.querySelector("input");
+        input.setAttribute("placeholder","Put only letters")
+        input.addEventListener("keyup",function(e){
+            this.value = this.value.replace(/[^A-Za-z]/, '');
+        });
+        // Done !
+
+        var input1 = document.createElement("input")
+        document.body.appendChild(input1);
+
+        input1.setAttribute("placeholder","Put only numbers")
+        input1.addEventListener("keyup",function(e){
+            this.value = this.value.replace(/[^.,0-9]/, '');
+        });
+
+
+        document.body.style.margin="5%"
+        document.body.style.fontSize="1.8rem"
+
+        
+
+
+    </script>
+</body>
+</html>
+<!-- Create an input type text that get/show only letters.
+Hint/Tip: use keypress event listener 
+and remove any character that is not a letter. -->
+
+<!-- var p = document.createElement("p");
+        // p.innerHTML="<br><br>I am secretely in love with G❤️"
+        // document.body.appendChild(p);
+        // p.style.fontSize="10px" -->

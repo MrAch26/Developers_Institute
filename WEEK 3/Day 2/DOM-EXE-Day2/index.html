@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom-exe-day2</title>
+</head>
+<body>
+    <article>
+        <h1> Some Facts </h1>
+        <h2> The CHOCOLATE </h2>
+        <p>Chocolate is made from tropical Theobroma cacao tree seeds. Its earliest use dates back to the Olmec civilization in Mesoamerica.</p>
+        <p> After the European discovery of the Americas, chocolate became very popular in the wider world, and its demand exploded. </p>
+        <p> Chocolate has since become a popular food product that millions enjoy every day, thanks to its unique, rich, and sweet taste.</p> 
+        <p> But what effect does eating chocolate have on our health?</p> 
+    </article>
+    
+    <label>What is your name ? </label><input type="text" name="userName"><br> <br>
+    <label>What did you think of the article ? </label><input type="text" name="questionToUser">
+<script>
+// 1
+    var p = document.querySelectorAll("p");
+    
+    for (i=0;i<p.length;i++){
+       p[i].classList.add("para_article");
+    }
+
+// 2
+    let article = document.querySelector("article")
+    article.removeChild(article.lastElementChild);
+    
+
+// 3
+    let h2 = document.querySelector("h2");
+
+    h2.addEventListener("click",function(){
+        h2.remove();
+    });
+
+// 4
+let h1 = document.querySelector("h1");
+h1.style.fontSize=Math.floor(Math.random()*100)+"px";
+
+// 5
+let p1 = document.getElementsByTagName("p")[0];
+
+p1.addEventListener("click",hide);
+
+function hide(){
+    p1.style.display="none"
+}
+
+// 6
+let p2 = document.getElementsByTagName("p")[1];
+
+p2.addEventListener("click", function(){
+window.setInterval(function(){
+    if (!p2.style.opacity){
+        p2.style.opacity=1
+    }
+    if(p2.style.opacity>0){
+        p2.style.opacity-=0.1;
+    } else {
+        clearInterval(window)
+    }
+},750)
+});
+
+// p2.addEventListener("click", function(){
+//     setInterval(function(){
+//         p2.style.color="transparent";
+//     },2000)
+// });
+
+// 7
+let input = document.querySelectorAll("input");
+
+var button = document.createElement("button");
+button.innerHTML="PRESS HERE"
+document.body.appendChild(button);
+
+button.addEventListener("click",AddToTable);
+
+function AddToTable(){
+var name = document.getElementsByName("userName")[0].value;
+var think = document.getElementsByName("questionToUser")[0].value;
+var div = document.createElement("div");
+
+div.setAttribute("id","tbl");
+div.style.marginTop="50px";
+div.style.textAlign="center";
+
+document.body.appendChild(div);
+
+document.getElementById("tbl").innerHTML="<table style='width:200px'  border='2'>"+
+"<tr>"+
+"<th>Name</th>"+"<th>Answer</th>"+
+"</tr>"+
+"<tr>"+
+"<td>"+name+"</td>"+
+"<td>"+think+"</td>"+
+"</tr>"
+
+}
+
+</script>
+</body>
+</html>

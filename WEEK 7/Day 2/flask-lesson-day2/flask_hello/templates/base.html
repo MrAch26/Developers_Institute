@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block title %}Base{% endblock %}</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	{% block css %}
+	{% endblock %}
+
+	<script type="text/javascript"></script>
+</head>
+<body>
+	{% include "navbar.html" %}
+	{% block header %}
+	<h1 class="text-success">Pet Store</h1>
+	{% endblock %}
+
+	{% block content %}
+		<h1>This is content from Base</h1>
+	{% endblock%}
+
+	{% block blah %}
+	<p>This is a footer from Base</p>
+	{% endblock %}
+
+	{% block js %}
+	{% endblock %}
+</body>
+</html>
+
+
+

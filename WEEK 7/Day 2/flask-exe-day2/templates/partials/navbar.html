@@ -1,0 +1,30 @@
+
+{% block nav_css %}
+<link rel="stylesheet" href="../static/css/nav.css">
+{% endblock nav_css %}
+
+<header id="navbar">
+        <nav class="navbar-container container">
+          <a href="/" class="home-link">
+            <div class="navbar-logo"></div>
+            DI_MarketPlace
+          </a>
+          <button type="button" class="navbar-toggle" aria-label="Open navigation menu">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-menu">
+            <ul class="navbar-links">
+              <li class="navbar-item"><a class="navbar-link" href="/">Home</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="{{url_for('products_page')}}">Product</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="/careers">Careers</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="/contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>    
+    </header>
+    
+    <br>
+    <br>
+    <br>

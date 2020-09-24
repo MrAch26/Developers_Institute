@@ -1,0 +1,38 @@
+.wrapper{
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    height: 30vh;
+    margin: 10px;
+}
+.wrapper1{
+    display: grid;
+    grid-template-columns:1fr 3fr ;
+    height: 35vh;
+    margin: 10px;
+}
+.border1{
+    border: 1px solid black;
+    margin: 10px;
+}
+.container{
+    display: grid;
+}
+.wrapper2{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.color1{
+    background-color: blue;
+}
+.color2{
+    background-color: burlywood;
+}
+.color3{
+background-color: chartreuse;
+}
+.color4{
+background-color: crimson;
+}
+.color5{
+background-color: orange;
+}

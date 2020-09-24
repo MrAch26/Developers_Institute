@@ -1,0 +1,42 @@
+/*.container{
+display: flex;
+justify-content: center;
+justify-content: space-around;
+}
+*/
+/*th{
+	width: 50%;
+}*/
+.container{
+text-align: center;
+}
+
+table{
+	text-align: center;
+}
+td{
+	text-align: left;
+	padding: 10px
+}
+body{
+	font-family: fantasy;
+	background-color: lightblue;
+}
+hr{
+	border-top: 1px solid blue;
+}
+a{
+	text-decoration: none;
+}
+
+a:hover{
+font-size: 100px; 
+}
+
+
+
+
+
+
+
+

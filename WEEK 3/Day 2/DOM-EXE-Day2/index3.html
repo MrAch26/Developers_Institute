@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom-day2-xpGold</title>
+
+  </head>
+  <body>
+    <div id="root"></div>
+
+    
+    <script>
+      var div = document.getElementById("root");
+var input = document.createElement("input");
+var button1 = document.createElement("button");
+var button2 = document.createElement("button");
+var button3 = document.createElement("button");
+var cartCount = document.createElement("p");
+var list = document.createElement("ul");
+
+button1.id = "Add";
+button2.id = "clearAll";
+button3.id = "displayList";
+
+button1.innerHTML = "Add +";
+button2.innerHTML = "Clear All";
+button3.innerHTML = "How many Item";
+
+div.appendChild(input);
+div.appendChild(button1);
+div.appendChild(button2);
+div.appendChild(button3);
+div.appendChild(cartCount);
+div.prepend(list);
+
+div.style.display = "grid";
+div.style.gridRowGap = "2px";
+div.style.margin = "25%";
+
+button1.addEventListener("click", addItem);
+button2.addEventListener("click", clear);
+button3.addEventListener("click", isaac);
+
+// yihaaaaa
+input.addEventListener("keypress",function(e){
+if (e.keyCode===13||e.key==="Enter"){
+  addItem();
+}
+});
+
+
+
+
+function addItem() {
+          if (input.value !== 0) {
+        var newItem = document.createElement("li");
+        newItem.innerHTML = input.value;
+        list.appendChild(newItem);
+        input.value = ""; 
+      };
+    };
+
+function isaac() {
+      var items = document.querySelectorAll("li").length;
+      cartCount.innerHTML = items + " are in cart.";
+    };
+
+
+      function clear() {
+      var items = document.querySelectorAll("li");
+
+      for (i = 0; i < items.length; i++) {
+        items[i].remove()
+      };
+    };
+    </script>
+  </body>
+</html>

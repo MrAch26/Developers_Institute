@@ -1,0 +1,54 @@
+LIST AND STRINGS:
+name = "jonathan"
+name[0] // "j"
+name[-1] // "n"
+
+{slice}
+name[0:3] // "jon" 
+name[4:7] // "tha"
+name[2:] // "nathan" (if you don't specify start will start at beginning. Same with end if you don't specify it.)
+name[0:8:2] or name [::2]// "jnta" (getting every other one)
+name[::-1]// name backwards
+
+(only for lists) 
+names["joe", "anne", "don"]
+othernames ["mike", "bob", "sara"]
+names.append("fred")// adds fred to the end
+names.remove("anna")// removes anne (the value).
+names.pop()// removes last item
+names.pop(1)// removes item at position 1
+popped = names.pop(0)// storing the popped item
+all_names = names + other names// adds the two lists
+names.append(othernames)// puts othernames in list inside names.
+names[3][1]// returns bob
+sorted(name of list) sorts it
+len(name of list) gives length
+names.index(20)// searches lists for first thing with the value is 20 
+names.count("joe")//will count how many times joe shows up in the list.
+ 
+
+string is immutable//can't cange it
+lists are mutable// the stuff in it
+
+
+SETS:
+set1 = {"a","b","c"}
+set.add("d")// adds
+(Sets are not ordered and therefore not indexable,does not allow duplicates)
+
+
+TUPLES: (are like immutable lists, are  indexed.)
+tup = (1,2,3)
+Useful for things that don't change, like days of the week.
+
+DICTIONARIES: (No matter how big they are, they do operations instantly. (Unlike a list))
+
+
+
+
+Homework:
+
+#how to add in the middle of list?
+#how to add in the left?
+list.insert
+list.extend

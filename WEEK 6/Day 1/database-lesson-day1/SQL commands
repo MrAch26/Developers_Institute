@@ -1,0 +1,504 @@
+isaac@isaac-HP-15-Notebook-PC:~$ sudo -i -u postgres psql
+[sudo] password for isaac: 
+psql (10.10 (Ubuntu 10.10-1.pgdg18.04+1))
+Type "help" for help.
+
+
+INSTALL POSTGRESQL UBUNTU 18.04:
+sudo apt update
+sudo apt install postgresql postgresql-contrib
+
+Check Version:
+psql --version
+
+
+
+
+Listing and Switching Databases in PostgreSQL:
+https://www.liquidweb.com/kb/listing-switching-databases-postgresql/
+
+Step 1: Login to your Database
+
+su - postgres
+
+or
+
+sudo -u postgres psql
+
+
+Step 2: Enter the PostgreSQL environment
+
+psql
+
+
+With the psql command, you’ll be greeted by its current version and command prompt.
+psql (9.5.14)
+Type "help" for help.
+
+postgres=#
+
+
+Step 2.5: CREATE USER AND ROLL(OPCIONAL):
+
+sudo -u postgres createuser --interactive
+
+Enter name of role to add: sammy
+Shall the new role be a superuser? (y/n) y
+
+
+Step 3: CREATE DATABASE:
+
+CREATE DATABASE dbname;
+
+or
+
+createdb sammy
+
+or
+
+sudo -u postgres createdb sammy
+
+
+DELETE DATABASE:
+
+DROP DATABASE dbname;
+
+
+
+Step 4: List Your PostgreSQL databases
+Often, you’ll need to switch from database to database, but first, we will list the available database in PostgreSQL.
+
+postgres=# \list
+
+Step 5: Switching Between Databases in PostgreSQL
+Switching between databases is another way of saying you are closing one connection and opening another. When you need to change between databases, you’ll use the “connect” command, which is conveniently shortened to \c, followed by the database name.
+
+\connect dbname
+
+Or:
+
+\c dbname
+
+
+Step 6: Quit Postgres Database:
+\q
+
+
+
+
+Step 7: CREATE TABLE:
+
+create table mytable (id integer, name text);
+
+
+
+Step 8: SELECT TABLE:
+
+select * from mytable;
+
+or
+
+SELECT​ ​ * ​ FROM​ mytable​ ;
+
+
+
+SELECT INNER JOIN TWO TABLES:
+
+TABLE A: names
+TABLE B: emails
+
+SELECT name, email,
+FROM A
+INNER JOIN B
+ON A.id = B.id;
+
+
+
+Step 9: DELETE TABLE:
+
+DROP TABLE tablename;
+
+
+
+
+
+
+EXERCISES:
+
+
+postgres=# create table test (id integer, name text);
+CREATE TABLE
+postgres=# \d
+        List of relations
+ Schema | Name | Type  |  Owner   
+--------+------+-------+----------
+ public | test | table | postgres
+(1 row)
+
+postgres=# \q
+isaac@isaac-HP-15-Notebook-PC:~$ createdb isaac
+createdb: could not connect to database template1: FATAL:  role "isaac" does not exist
+isaac@isaac-HP-15-Notebook-PC:~$ sudo -i -u postgres psql
+psql (10.10 (Ubuntu 10.10-1.pgdg18.04+1))
+Type "help" for help.
+
+postgres=# \d
+        List of relations
+ Schema | Name | Type  |  Owner   
+--------+------+-------+----------
+ public | test | table | postgres
+(1 row)
+
+postgres=# select id, name from text;
+ERROR:  relation "text" does not exist
+LINE 1: select id, name from text;
+                             ^
+postgres=# select id, name from text;
+ERROR:  relation "text" does not exist
+LINE 1: select id, name from text;
+                             ^
+postgres=# select id, name from test;
+ id | name 
+----+------
+(0 rows)
+
+postgres=# insert into test (id, name) values (23, 'isaac');
+INSERT 0 1
+postgres=# \d
+        List of relations
+ Schema | Name | Type  |  Owner   
+--------+------+-------+----------
+ public | test | table | postgres
+(1 row)
+
+postgres=# select id, name from test;
+ id | name  
+----+-------
+ 23 | isaac
+(1 row)
+
+postgres=# insert into test (name, id) values ('isaac', 45);
+INSERT 0 1
+postgres=# select id, name from test;
+ id | name  
+----+-------
+ 23 | isaac
+ 45 | isaac
+(2 rows)
+
+postgres=# select *
+postgres-# select * from test
+postgres-# select * from test;
+ERROR:  syntax error at or near "select"
+LINE 2: select * from test
+        ^
+postgres=# select * from test;
+ id | name  
+----+-------
+ 23 | isaac
+ 45 | isaac
+(2 rows)
+
+postgres=# insert into test (name) values ('isaac');
+INSERT 0 1
+postgres=# \d
+        List of relations
+ Schema | Name | Type  |  Owner   
+--------+------+-------+----------
+ public | test | table | postgres
+(1 row)
+
+postgres=# select * from test;
+ id | name  
+----+-------
+ 23 | isaac
+ 45 | isaac
+    | isaac
+(3 rows)
+
+postgres=# SELECT name FROM test WHERE id = 23;
+ name  
+-------
+ isaac
+(1 row)
+
+postgres=# SELECT * name FROM test WHERE name = 'isaac';
+ERROR:  syntax error at or near "name"
+LINE 1: SELECT * name FROM test WHERE name = 'isaac';
+                 ^
+postgres=# SELECT * FROM test WHERE name = 'isaac';
+ id | name  
+----+-------
+ 23 | isaac
+ 45 | isaac
+    | isaac
+(3 rows)
+
+postgres=# select * from test
+postgres-# select * from test;
+ERROR:  syntax error at or near "select"
+LINE 2: select * from test;
+        ^
+postgres=# select * from test;
+ id | name  
+----+-------
+ 23 | isaac
+ 45 | isaac
+    | isaac
+(3 rows)
+
+postgres=# UPDATE test SET id = 55 WHERE name = 'isaac';
+UPDATE 3
+postgres=# select * from test;
+ id | name  
+----+-------
+ 55 | isaac
+ 55 | isaac
+ 55 | isaac
+(3 rows)
+
+postgres=# SELECT * FROM test where name LIKE 'i%';
+ id | name  
+----+-------
+ 55 | isaac
+ 55 | isaac
+ 55 | isaac
+(3 rows)
+
+postgres=# ^C
+postgres=# \l
+                             List of databases
+   Name    |  Owner   | Encoding | Collate | Ctype |   Access privileges   
+-----------+----------+----------+---------+-------+-----------------------
+ postgres  | postgres | UTF8     | en_IL   | en_IL | 
+ template0 | postgres | UTF8     | en_IL   | en_IL | =c/postgres          +
+           |          |          |         |       | postgres=CTc/postgres
+ template1 | postgres | UTF8     | en_IL   | en_IL | =c/postgres          +
+           |          |          |         |       | postgres=CTc/postgres
+(3 rows)
+
+postgres=# SELECT id FROM test;
+ id 
+----
+ 55
+ 55
+ 55
+(3 rows)
+
+postgres=# SELECT DISTINCT id FROM test;
+ id 
+----
+ 55
+(1 row)
+
+postgres=# UPDATE test SET id=6 WHERE name='isaac';
+UPDATE 3
+postgres=# SELECT id FROM test;
+ id 
+----
+  6
+  6
+  6
+(3 rows)
+
+postgres=# SELECT DISTINCT id FROM test;
+ id 
+----
+  6
+(1 row)
+
+postgres=# SELECT DISTINCT name, id FROM test;
+ name  | id 
+-------+----
+ isaac |  6
+(1 row)
+
+postgres=# select * from test;
+ id | name  
+----+-------
+  6 | isaac
+  6 | isaac
+  6 | isaac
+(3 rows)
+
+postgres=# select id from test GROUP BY id;
+ id 
+----
+  6
+(1 row)
+
+postgres=# select id from test GROUP BY id HAVING id=6;
+ id 
+----
+  6
+(1 row)
+
+postgres=# ALTER TABLE test ADD lastname text;
+ALTER TABLE
+postgres=# select * from test;
+ id | name  | lastname 
+----+-------+----------
+  6 | isaac | 
+  6 | isaac | 
+  6 | isaac | 
+(3 rows)
+
+postgres=# 
+postgres=# 2
+postgres-# DELETE FROM table
+postgres-# 
+postgres-# DELETE FROM test WHERE id = 6;
+ERROR:  syntax error at or near "2"
+LINE 1: 2
+        ^
+postgres=# 2
+DELETE FROM table
+DELETE FROM test WHERE id = 6;
+ERROR:  syntax error at or near "2"
+LINE 1: 2
+        ^
+postgres=# 2
+DELETE FROM table
+DELETE FROM test WHERE id = 6;
+ERROR:  syntax error at or near "2"
+LINE 1: 2
+        ^
+postgres=# ;
+postgres=# DELETE FROM test WHERE id=6;
+DELETE 3
+postgres=# select * from test;
+ id | name | lastname 
+----+------+----------
+(0 rows)
+
+postgres=# insert into test (id, name) values (1, 'isaac');
+INSERT 0 1
+postgres=# select * from test;
+ id | name  | lastname 
+----+-------+----------
+  1 | isaac | 
+(1 row)
+
+postgres=# insert into test (lastname) value ('groisman);
+postgres'# 
+postgres'# ;
+postgres'# 
+postgres'# select * from test;
+postgres'# 
+postgres'# select * from test;
+postgres'# select * from test;
+postgres'# ^C
+postgres=# select * from test;
+ id | name  | lastname 
+----+-------+----------
+  1 | isaac | 
+(1 row)
+
+postgres=# insert into test (lastname) value ('groisman');
+ERROR:  syntax error at or near "value"
+LINE 1: insert into test (lastname) value ('groisman');
+                                    ^
+postgres=# insert into test (lastname) values ('groisman');
+INSERT 0 1
+postgres=# select * from test;
+ id | name  | lastname 
+----+-------+----------
+  1 | isaac | 
+    |       | groisman
+(2 rows)
+
+postgres=# CREATE TABLE test1 (
+postgres(# id serial primary key,
+postgres(# username not null unique,
+postgres(# ^C
+postgres=# CREATE TABLE test1 (ID SERIAL PRIMARY KEY, USERNAME VARCHAR(250) NOT NULL UNIQUE, PASS VARCHAR(100) NOT NULL);
+CREATE TABLE
+postgres=# SELECT * test1;
+ERROR:  syntax error at or near "test1"
+LINE 1: SELECT * test1;
+                 ^
+postgres=# SELECT * from test1;
+ id | username | pass 
+----+----------+------
+(0 rows)
+
+postgres=# INSERT INTO test1 (USERNAME, PASS) VALUES ('Isaac', '123');
+INSERT 0 1
+postgres=# SELECT * from test1;
+ id | username | pass 
+----+----------+------
+  1 | Isaac    | 123
+(1 row)
+
+postgres=# INSERT INTO test1 (USERNAME, PASS) VALUES ('Isaac', '123');
+ERROR:  duplicate key value violates unique constraint "test1_username_key"
+DETAIL:  Key (username)=(Isaac) already exists.
+postgres=# INSERT INTO test1 (USERNAME, PASS) VALUES ('Yossi', '12345');
+INSERT 0 1
+postgres=# SELECT * from test1;
+ id | username | pass  
+----+----------+-------
+  1 | Isaac    | 123
+  3 | Yossi    | 12345
+(2 rows)
+
+postgres=# INSERT INTO test1 (USERNAMES) VALUES ('Sara');
+ERROR:  column "usernames" of relation "test1" does not exist
+LINE 1: INSERT INTO test1 (USERNAMES) VALUES ('Sara');
+                           ^
+postgres=# INSERT INTO test1 (USERNAME, PASS) VALUES ('Ziv', '123485');
+INSERT 0 1
+postgres=# SELECT * from test1;
+ id | username |  pass  
+----+----------+--------
+  1 | Isaac    | 123
+  3 | Yossi    | 12345
+  4 | Ziv      | 123485
+(3 rows)
+
+postgres=# SELECT * from test;
+ id | name  | lastname 
+----+-------+----------
+  1 | isaac | 
+    |       | groisman
+(2 rows)
+
+postgres=# SELECT * from test a, test1 b WHERE a.name=b.username;
+ id | name | lastname | id | username | pass 
+----+------+----------+----+----------+------
+(0 rows)
+
+postgres=# SELECT * from test a, test1 b WHERE a.name=b.username AND a.id=55;
+ id | name | lastname | id | username | pass 
+----+------+----------+----+----------+------
+(0 rows)
+
+postgres=# SELECT * from test a, test1 b WHERE a.name=b.username AND a.id=1;
+ id | name | lastname | id | username | pass 
+----+------+----------+----+----------+------
+(0 rows)
+
+postgres=# \l
+                             List of databases
+   Name    |  Owner   | Encoding | Collate | Ctype |   Access privileges   
+-----------+----------+----------+---------+-------+-----------------------
+ postgres  | postgres | UTF8     | en_IL   | en_IL | 
+ template0 | postgres | UTF8     | en_IL   | en_IL | =c/postgres          +
+           |          |          |         |       | postgres=CTc/postgres
+ template1 | postgres | UTF8     | en_IL   | en_IL | =c/postgres          +
+           |          |          |         |       | postgres=CTc/postgres
+(3 rows)
+
+postgres=# \d
+              List of relations
+ Schema |     Name     |   Type   |  Owner   
+--------+--------------+----------+----------
+ public | test         | table    | postgres
+ public | test1        | table    | postgres
+ public | test1_id_seq | sequence | postgres
+(3 rows)
+
+postgres=# ALTER USER postgres PASSWORD '12345';
+ALTER ROLE
+postgres=# 
+

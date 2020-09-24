@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Students</title>
+  </head>
+  <body>
+    <h1>Students :</h1>
+    {% for student in students%} {% if student == 'Adam' %}
+    <h3>{{student}}</h3>
+    {% elif student == 'Bob' %}
+    <h3>whats up {{student}}</h3>
+    {% else %}
+    <h3>Sorry name not valid</h3>
+    {% endif %} {% endfor %}
+
+    {% for message in get_flashed_messages()  %}
+    <p>{{message}}</p>
+    {% endfor %}
+
+    
+    {% for category, message  in get_flashed_messages(with_categories=True)  %}
+    <h4 style="color:{{category}}">{{message}}</h4>
+    {% endfor %}
+
+  </body>
+</html>

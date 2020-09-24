@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Volume of a Sphere</title>
+    <style>
+      body {
+        padding-top: 30px;
+      }
+      label,
+      input {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Input radius value and get the volume of a sphere.</p>
+    <form id="MyForm">
+      <label for="radius">Radius</label
+      ><input type="text" name="radius" id="radius" required />
+      <label for="volume">Volume</label
+      ><input type="text" name="volume" id="volume" />
+      <input type="submit" value="Calculate" id="submit" />
+    </form>
+
+    <script>
+
+        function volumeOfTheSphere(){
+            var calculation;
+            var radius = document.getElementById("radius").value;
+
+            radius=Math.abs(radius);
+            calculation = (4 * Math.PI * radius**3) / 3;
+            calculation = calculation.toFixed(2);
+            console.log(calculation);
+            
+            document.getElementById("volume").value=calculation;
+            return false;
+        }
+
+        // var volume = document.getElementById("volume").value;
+        // volume.innerHTML="Volume ="+volume;
+
+        window.onload=document.getElementById("MyForm").onsubmit=volumeOfTheSphere;
+
+
+
+// Calc from https://www.code4example.com/javascript/calculate-volume-of-a-sphere-in-javascript/
+    //   function calc() {
+        // let number = document.getElementById("radius").value;
+        // number = Number(number);
+
+    //     // The formula for the volume of a sphere (4. π. r*r*r )/ 3
+        // let sphere = (4 * Math.PI * number * number * number) / 3;
+
+    //     //Cut the floating digits to two float
+    //     sphere = sphere.toFixed(2);
+    //     alert("The volume of a sphere: " + sphere);
+    //   }
+
+    //   let btnCalc = document.getElementById("btnCalc");
+    //   btnCalc.onclick = calc;
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<h2>Welcome to the Home Page</h2>	
+	{% if show == True %}
+	<h1>My Basket</h1>
+
+		{% for item in data %}
+		<h3>{{item}}</h3>
+		{% endfor %}
+
+	{% endif %}
+
+
+	{% if name == "Jon" %}
+		<h1>Hi Jon</h1>
+	{% elif name ==  "Dave" %}
+		<h1>Hi Dave</h1>
+	{% else %}
+		<h1>Hi Bob</h1>
+	{% endif %}
+
+	<a class="btn btn-primary" href="/products">Products Page</a>
+
+{% endblock%}

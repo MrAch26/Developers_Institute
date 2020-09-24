@@ -1,0 +1,18 @@
+{%extends 'home.html'%}
+
+
+{% block content %}
+
+<div class="square" style="background-color: {{color}}" ></div>
+
+{% if color != "white" %}
+<p>The colors is: {{color}}</p>
+{% else  %}
+<p>The colors is: {{color}} you might not see it ;)</p>
+{% endif %}
+
+<a href="/"> Home</a>
+
+
+{% endblock content %}
+

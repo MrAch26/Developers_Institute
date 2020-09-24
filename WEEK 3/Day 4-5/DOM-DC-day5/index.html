@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-DC-Day5</title>
+</head>
+<body>
+    <h1>DOM Daily Challenge Week 3 Day 5</h1>
+    <h2>Open Console cmd+opt+j</h2>
+  <script>
+    function generatePyramid() {
+      var totalNumberOfRows = 6;
+      var output = "";
+
+      for (var i = 1; i <= totalNumberOfRows; i++) {
+        for (var j = 5; j <= i; j++) {
+          output += " * ";
+        }
+        console.log(output);
+        output = "";
+      }
+    }
+    generatePyramid();
+    // =============
+
+    function createPyramid(rows) {
+      for (let i = 0; i < rows; i++) {
+        var output = "";
+        for (let j = 0; j < rows - i; j++) output += " ";
+        for (let k = 0; k <= i; k++) output += "* ";
+        console.log(output);
+      }
+    }
+
+    createPyramid(5);
+  </script>
+</body>
+</html>

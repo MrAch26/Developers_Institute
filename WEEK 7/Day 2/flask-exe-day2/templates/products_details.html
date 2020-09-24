@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Here are the product details :</h2>
+    <ul>
+      
+        <li>
+            <p>ID : {{product['ProductId']}}</p>     
+        </li>
+        <li>
+            <p>Name :{{product['Name']}}</p>
+        </li>
+        <li>
+            <p>Price : <strong>{{product['Price']}} {{product['CurrencyCode']}}</strong></p>     
+        </li>
+        <li>
+            <p>Status : {{product['Status']}}</p>     
+        </li>
+
+<a href="{{url_for('products_page')}}">Back to Products</a>
+ 
+    
+
+{% endblock content %}

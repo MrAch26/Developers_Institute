@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Challenge: Create a solar system</title>
+    <style>
+        p{
+            margin-top: 18px;
+            margin-left: 12px;
+        }
+      body {
+        background-color: black;
+        padding: 10px;
+      }
+      .planet {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        margin-bottom: 26px;
+        text-align: center;
+      }
+      .moon {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: rgb(237, 237, 237);
+        color:orchid;
+      }
+      .bg0 {
+        background-color: aquamarine;
+      }
+
+      .bg1 {
+        background-color: orange;
+      }
+      
+      .bg2 {
+        background-color: orchid;
+      }
+    </style>
+  </head>
+  <body>
+      <a href="index1.html">dailychallenge </a>
+    <script>
+
+      // let body = document.body;
+      let planet = ["Uranus", "Neptune", "Pluton"];
+      // var div = document.createElement("div");
+
+      for (var c in planet) {
+        var newElement = document.createElement("div");
+        newElement.id = planet[c];
+        newElement.className = "planet bg" + [c];
+        newElement.innerHTML = planet[c];
+        document.body.prepend(newElement);
+      }
+
+      document.querySelector("#Neptune").style.marginLeft = "52px";
+// bonus 
+      var moon = document.createElement("div");
+
+      moon.id = "moon";
+      moon.classList.add("moon");
+      moon.innerHTML = "<p>Lune</p>";
+      document.body.prepend(moon);
+
+      moon.style.left = "500px";
+
+      // body.prepend(element);// div.classList.add("planet");
+    </script>
+  </body>
+</html>

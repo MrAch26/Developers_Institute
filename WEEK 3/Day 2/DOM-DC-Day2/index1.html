@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>DC2 : Mad Libs</title>
+ </head>
+ <style>
+     #story{
+     font-size: 50px;
+     background: -webkit-linear-gradient(rgb(223, 59, 59), #333);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     }
+     .add{
+        font-size: 50px;
+        background: -webkit-linear-gradient(rgb(59, 223, 81), #333);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+     }
+     h1{
+         font-size:4em ;
+     }
+     ul{
+         font-size: 2em;
+     }
+     button{
+        background:    #000000;
+        border-radius: 11px;
+        padding:       10px 25px;
+        color:         #ffffff;
+        display:       inline-block;
+        font:          normal bold 22px/1 fantasy;
+        text-align:    center;
+     }
+     .css-input {
+  border-width: 2px;
+  border-color: #cccccc;
+  border-style: solid;
+  font-size: 16px;
+  text-align: left;
+  font-family: fantasy;
+  padding: 8px;
+  border-radius: 7px;
+  font-weight: bold;
+}
+.css-input:focus {
+  outline: none;
+}
+
+
+ </style>
+ <body>
+
+    <h1>Mad Libs</h1>
+
+    <ul>
+      <li>Noun: <input class="css-input" type="text" id="noun"></li> 
+      <li>Adjective: <input class="css-input" type="text" id="adjective"></li> 
+      <li>Someone's Name: <input class="css-input" type="text" id="person"></li>
+    </ul>
+
+    <button id="lib-button">Lib It!</button>
+
+    <p>Generated story: 
+    <span id="story"></span>
+    </p>
+
+    <a href="index.html"><----Daily Challenge - Button</a>
+    <script>
+        document.body.style.fontFamily="fantasy";
+        
+
+        let libButton = document.getElementById('lib-button');
+        let libIt = function() {
+            let noun = document.getElementById("noun").value;
+            let adjective = document.getElementById("adjective").value;
+            let person = document.getElementById("person").value;
+
+            let storyDiv = document.getElementById("story");
+            storyDiv.innerHTML = "Once a <span class='add'>"+adjective+"</span> bird ate a \
+            <span class='add'>"+noun+"</span> and pooped on <span class='add'>"+person+"</span>.";
+
+            
+        };
+        libButton.addEventListener('click', libIt);
+    </script>
+
+ </body>
+</html>

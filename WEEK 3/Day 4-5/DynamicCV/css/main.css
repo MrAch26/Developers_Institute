@@ -1,0 +1,238 @@
+/* Root Colors */
+
+:root {
+    --main-bg-color: #ececec;
+    --main-color: #ff7171;
+    --second-color: #ffaa71;
+    --third-color: #343a40;
+}
+
+.about {
+    transition: fadeInRight 2s;
+}
+
+.app {
+    transition: fadeInLeft 2s;
+}
+
+#aboutContainer3 {
+    /* margin-top: 2em; */
+    color: var(--third-color);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-decoration: underline;
+}
+
+
+/* Iframe 1 */
+
+#iFrame1 {
+    height: 100vh;
+}
+
+
+/* Contact form */
+
+#contact .card:hover i,
+#contact .card:hover h4 {
+    color: #87d37c;
+}
+
+.contact-form {
+    margin-top: 70px;
+}
+
+#contact {
+    padding-top: 2em !important;
+    padding-bottom: 1em !important;
+    text-align: center;
+}
+
+#message {
+    margin-top: 2em;
+}
+
+#anchor26 {
+    color: var(--main-bg-color);
+    text-decoration: none;
+}
+
+.form1 {
+    margin-top: -6.5em;
+}
+
+
+/* Logo DynamicCV */
+
+#logo-bg {
+    fill: green;
+}
+
+
+/* Font awesome logos + hover */
+
+.icon-features {
+    margin-bottom: 1rem;
+}
+
+.icon-features:hover {
+    color: var(--main-color);
+}
+
+.container-fluid {
+    padding: 3% 15% 7%;
+    text-align: center;
+}
+
+#card-daniel {
+    color: var(--third-color);
+    text-align: right;
+    margin-left: auto;
+    border-radius: 0;
+    border: none;
+    /* margin-top: 1em; */
+}
+
+#card-roy {
+    color: var(--third-color);
+    border-radius: 0;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    /* margin-top: 1em; */
+}
+
+.card {
+    background-color: var(--second-color) !important;
+}
+
+body {
+    background-color: var(--main-color);
+    font-family: 'Alata', sans-serif;
+}
+
+footer {
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* height: 2.5rem;   */
+    color: var(--main-bg-color);
+    width: 100%;
+    text-align: center;
+    background-color: var(--third-color);
+}
+
+#appContainer1 {
+    margin: auto;
+}
+
+.multiselect-wrapper {
+    margin: 1em;
+    /* margin-left: 100%; */
+}
+
+
+/* .multiselect-input {
+    margin-left: 100% !important;
+} */
+
+#selectContainer {
+    margin: auto !important;
+    text-align: center;
+}
+
+.center1 {
+    /* margin:auto; */
+    text-align: center;
+}
+
+.border1 {
+    border-top: 1px solid var(--third-color);
+    border-bottom: 1px solid var(--third-color);
+}
+
+.border2 {
+    margin-top: 10px;
+}
+
+.row1 {
+    height: 1000px;
+}
+
+.btn1 {
+    width: 50%;
+    float: left;
+    border-radius: 0;
+}
+
+.bg-primary1 {
+    background-color: var(--main-color) !important;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.color1 {
+    color: var(--third-color) !important;
+}
+
+.btn-outline-secondary {
+    background-color: var(--second-color);
+}
+
+
+/* FONT */
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Oswald:wght@300;400&display=swap');
+
+/* RESPONSIVENESS */
+
+@media only screen and (max-width: 765px) {
+    #aboutContainer1 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: unset !important;
+    }
+    #aboutLogo {
+        margin-left: unset !important;
+    }
+    #aboutContainer2 {
+        display: flex;
+        flex-direction: column;
+        height: unset !important;
+        /* height: unset !important; */
+    }
+    #aboutContainer3 {
+        height: unset !important;
+    }
+    footer {
+        bottom: unset;
+    }
+    #card-daniel {
+        max-width: unset !important;
+    }
+    #card-roy {
+        max-width: unset !important;
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translate3d(0%, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}

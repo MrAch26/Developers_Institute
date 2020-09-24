@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DailyChallenge #2 - dom - day 1</title>
+    <style>
+      p{
+        padding: 22px;
+      }
+        .bookshelf{
+            margin: 5px;
+            text-align: center;
+            width: 70%;
+            display: flex;
+        }
+    </style>
+  </head>
+  <body>
+
+
+    <a href="index.html">DailyChallenge - Planete</a>
+
+
+    <script>
+
+      let allBooks = {
+    book1: {
+      title: "Rhinoceros",
+      author: "Eugene Ionesco",
+      image:
+        "https://images-na.ssl-images-amazon.com/images/I/413iphG5p3L._SX301_BO1,204,203,200_.jpg",
+      alreadyRead: true
+    },
+    book2: {
+      title: "Harry Potter",
+      author: "Joanne Rowling",
+      image:
+        "https://images-na.ssl-images-amazon.com/images/I/51t55KcM8pL._SX332_BO1,204,203,200_.jpg",
+      alreadyRead: false
+    },
+  };
+
+  let bookshelf = document.createElement("div");
+  bookshelf.classList.add("bookshelf");
+  document.body.prepend(bookshelf); 
+  let book = document.createElement("div");
+
+  var x = document.createElement("div");
+  x.innerHTML="Thank you Roy&Daniel !& Yitzhak &copy; 😎";	
+  document.body.prepend(x);
+
+// to find with key : object.key
+    for (let key in allBooks) { 
+ // for (i=0;i<allBooks.length;i++){}
+// let = var 
+    console.log(allBooks[key]);
+    book = document.createElement("div");
+    book.innerHTML = "<p> "+allBooks[key].title + " written by \
+      " + allBooks[key].author+" </p>";
+
+    bookshelf.appendChild(book);
+
+    img = document.createElement("img");
+    img.src = allBooks[key].image;
+    img.style.width = "100px";
+    img.style.padding = "1em";
+    book.style.border = "4px solid grey";
+    book.style.margin = "1em";
+
+if (allBooks[key].alreadyRead == true) {
+    book.style.border = "4px solid red";
+    book.style.color = "green"
+}
+
+book.appendChild(img);
+}
+
+
+    </script>
+  </body>
+</html>

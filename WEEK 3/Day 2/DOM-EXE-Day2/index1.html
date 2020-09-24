@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM-Exe2</title>
+</head>
+
+<body>
+    <p>
+        <strong>Hello</strong> I hope you are enjoying
+        <strong>this</strong> class. <br />
+        At the <strong>end</strong> you <strong>will</strong> be great Developers!
+        <br /><strong>Enjoy</strong> the <strong>JavaScript </strong> lessons
+    </p>
+
+    <script>
+        // 1
+        //   var bold;
+
+        function getBold_Items() {
+            let bold = document.getElementsByTagName("strong");
+            return bold;
+        }
+        getBold_Items();
+        // 2
+
+        function highlight() {
+            for (i = 0; i < 6; i++)
+                document.getElementsByTagName("strong")[i].style.color = "blue";
+        }
+        highlight();
+        // 3
+
+        function return_normal() {
+            for (i = 0; i < 6; i++)
+                document.getElementsByTagName("strong")[i].style.color = "black";
+        }
+        return_normal();
+        // 4
+
+        for (i = 0; i < 6; i++) {
+            document.getElementsByTagName("strong")[i].addEventListener("mouseover", highlight);
+            document.getElementsByTagName("strong")[i].addEventListener("mouseout", return_normal);
+        }
+    </script>
+</body>
+
+</html>

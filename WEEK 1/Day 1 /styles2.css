@@ -1,0 +1,72 @@
+body{
+	font-family: cursive;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 100px
+}
+
+nav.button {
+	height: 30px;
+
+}
+
+.button {
+	color: white;
+	background-color: lightblue;
+	border-radius: 8px;
+	padding:5px;
+	text-align: center;
+	border:0px;
+}
+
+form{
+	background-image: url('oceanbackground.jpg');
+	background-repeat: no-repeat; 
+	height: 500px;
+	width:;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+form p{
+	font-size: 40px;
+	font-weight: bolder;
+	color: blue;
+	text-align: center;
+	}
+
+form input{
+	height: 2em;
+}
+
+form input .email {
+	width: 350px;
+}
+
+form input .button {
+	width: 75px;
+}
+
+.container {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 40px;
+
+}
+
+.sales {
+	text-align: center;
+}
+i{
+	color: blue;
+	font-size: 50px;
+
+}
+
+

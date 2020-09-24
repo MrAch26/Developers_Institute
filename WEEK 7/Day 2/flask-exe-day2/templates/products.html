@@ -1,0 +1,21 @@
+
+{% extends 'base.html' %}
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+{% endblock  %}
+{% block content %}
+    <ul class="products-list text-center">
+        {% for product in products %}
+        <li class="product">
+            <p>{{ product['Name'] }}</p>
+            {% if product['Quantity'] != 0 %}
+            <button class="buy-button" type="button"><a style="text-decoration:none; color:white" href="products/{{product['ProductId']}}">More details !</a></button>
+            <h4>Status :{{product['Status']}}</h4>
+            {% else %}
+            <h5>No stock left !</h5>
+            <h4>Status :{{product['Status']}}</h4>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+{% endblock content %}

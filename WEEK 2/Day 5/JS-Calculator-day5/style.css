@@ -1,0 +1,131 @@
+h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+footer {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: darkorange;
+}
+.container{
+    display: grid;
+    grid-template-areas: 
+    'display display display display display display display display display display  '
+    'bg-btn-1 bg-btn-1 bg-btn-2 bg-btn-2 bg-btn-3 bg-btn-3 bg-btn-del bg-btn-del bg-btn-results bg-btn-results '
+    'bg-btn-4 bg-btn-4 bg-btn-5 bg-btn-5 bg-btn-6 bg-btn-6 bg-btn-clear bg-btn-clear bg-btn-results bg-btn-results '
+    'bg-btn-7 bg-btn-7 bg-btn-8 bg-btn-8 bg-btn-9 bg-btn-9 bg-btn-0 bg-btn-0 bg-btn-par1 bg-btn-par2  '
+    'bg-btn-plus bg-btn-plus bg-btn-minus bg-btn-minus bg-btn-mul bg-btn-mul bg-btn-div bg-btn-div bg-btn-point bg-btn-point';
+    grid-gap: 5px;
+    width: 50%;
+    height: 70vh;
+    margin: auto;
+    margin-top: 52px;
+}
+.symbols{
+    background-color: crimson;
+    font-size: 20px;
+}
+.numbers{
+    background-color: chocolate;
+    font-size: 20px;
+}
+.bg-btn-par1{
+ grid-area: bg-btn-par1 ;
+ background-color: darkmagenta;
+ cursor: pointer;
+}
+.bg-btn-par2{
+    grid-area: bg-btn-par2;
+    background-color: darkmagenta;
+    cursor: pointer;
+   }
+.display{
+    grid-area: display;
+    border: 2px solid black;
+    background-color: lightblue;
+    padding: 10px;
+    font-size: 40px;
+}
+.bg-btn-1{
+    grid-area: bg-btn-1;
+    cursor: pointer;
+}
+.bg-btn-2{
+    grid-area: bg-btn-2;
+    cursor: pointer;
+}
+.bg-btn-3{
+    grid-area: bg-btn-3;
+    cursor: pointer;
+}
+.bg-btn-del{
+    grid-area: bg-btn-del;
+    font-size: 20px;
+    background-color: lightseagreen;
+    cursor: pointer;
+}
+.bg-btn-results{
+    grid-area: bg-btn-results;
+    font-size: 20px;
+    background-color: lightgreen;
+    cursor: pointer;
+}
+.bg-btn-4{
+    grid-area: bg-btn-4;
+    cursor: pointer;
+}
+.bg-btn-5{
+    grid-area: bg-btn-5;
+    cursor: pointer;
+}
+.bg-btn-6{
+    grid-area: bg-btn-6;
+    cursor: pointer;
+}
+.bg-btn-clear{
+    grid-area: bg-btn-clear;
+    font-size: 20px;
+    background-color: lightseagreen;
+    cursor: pointer;
+}
+.bg-btn-7{
+    grid-area: bg-btn-7;
+    cursor: pointer;
+}
+.bg-btn-8{
+    grid-area: bg-btn-8;
+    cursor: pointer;
+}
+.bg-btn-9{
+    grid-area: bg-btn-9;
+    cursor: pointer;
+}
+.bg-btn-0{
+    grid-area: bg-btn-0;
+    cursor: pointer;
+}
+.bg-btn-plus{
+    grid-area: bg-btn-plus;
+    cursor: pointer;
+}
+.bg-btn-minus{
+    grid-area: bg-btn-minus;
+    cursor: pointer;
+}
+.bg-btn-div{
+    grid-area: bg-btn-div;
+    cursor: pointer;
+}
+.bg-btn-mul{
+    grid-area: bg-btn-mul;
+    cursor: pointer;
+}
+.bg-btn-point{
+    grid-area: bg-btn-point;
+    font-size: 30px;
+    background-color: lightsalmon;
+    cursor: pointer;
+}

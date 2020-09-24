@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom-exe2gold-day2</title>
+</head>
+<body>
+    <select id="genres">
+        <option value="rock">Rock</option>
+        <option value="blues" selected>Blues</option>
+      </select>
+    
+      <script>
+
+        //   console.log(document.getElementsByTagName("option")[0].value);
+          var genres = document.getElementById("genres");
+          var option = document.createElement("option");
+          var blues = document.getElementsByTagName("option")[1];
+
+          option.setAttribute("value","classic");
+          option.innerHTML="ISAAC IS A MENCH"; //Classic
+          option.setAttribute("selected","");//value=""
+          blues.removeAttribute("selected");
+
+          genres.appendChild(option);
+
+      </script>
+</body>
+</html>
