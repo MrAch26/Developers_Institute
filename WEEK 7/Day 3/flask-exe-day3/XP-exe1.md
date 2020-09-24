@@ -5,5 +5,5 @@ Key = secrets.token_urlsafe(256)
 
 Key = 'Hh6Wtydx0u21lBHoIXBWXFI1knsK9ulJFCHXr635nYn2nLP5ZFOJvluSndV00X59JWiaLfg2T0oaPTPL4aHuUiQ7BrHY7lfKpAA6DRQat-7bWxc2KV0UyLVOyUhKu1G_rHAHXc5fWRlSb7Crb12QJEN07khR62sJuy4zyfv2hOsCUy47IAlrEBC0TknMxYDMfo8BC4MwqWZADPxCGZZXwGEQUaAGh1524xPQ4c8lZKndCy6Ha5pyxYJeIWDwjoMBzwENYg0EbbVh9hEMJvnXixOnTKa3gX7NWuen8kxkGI_cUAgZDP83EMi4vL1wVxcBeXtT5K7N9yvpX4cyGpqDQ'
 
-
+https://docs.python.org/3/library/secrets.html
  

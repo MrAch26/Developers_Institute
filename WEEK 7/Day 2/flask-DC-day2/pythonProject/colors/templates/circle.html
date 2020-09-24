@@ -3,21 +3,17 @@
 
 {% block content %}
 
-
 <!-- todo : ADD BORDER IF WHITE -->
-{% if color != "white" %}
-<div id="circle" class="circle" style="background-color: {{color}}"></div>
-<p>The colors is: {{color}}</p>
-<!--<script>-->
-<!--    document.getElementById('circle').style.border="1px border black"-->
-<!--</script>-->
-{% else  %}
-<div class="circle" style="background-color:{{color}}; border: 1px solid black;"></div>
-<p>The colors is: {{color}} you might not see it ;)</p>
-{% endif %}
 
+<div class="circle" style="background-color: {{color}}; {% if color == "white" %} border: 1px solid black; {% endif %} "></div>
+<p>The colors is: {{color}}{% if color == "white" %} --> You might not see it {% endif %}</p>
 
 <a href="/">Home</a>
 
 
 {% endblock content %}
+
+<!--<script>-->
+<!--    document.getElementById('circle').style.border="1px border black"-->
+<!--</script>-->
+<!-- {# {% if  %}{% endif %} #} add between class -->

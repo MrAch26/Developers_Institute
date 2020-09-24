@@ -11,7 +11,7 @@ def home():
 
 @app.route('/square')
 def square():
-    data = database.load_database()
+    data = database.load_database('color_db.json')
     template_file = open('colors/templates/square.html', 'r').read()
 
     random_color = random.choice(data['colors'])
@@ -24,7 +24,7 @@ def square():
 
 @app.route('/triangle')
 def triangle():
-    data = database.load_database()
+    data = database.load_database('color_db.json')
     template_file = open('colors/templates/triangle.html', 'r').read()
 
     random_color = random.choice(data['colors'])
@@ -35,7 +35,7 @@ def triangle():
 
 @app.route('/circle')
 def circle():
-    data = database.load_database()
+    data = database.load_database('color_db.json')
     template_file = open('colors/templates/circle.html', 'r').read()
 
     random_color = random.choice(data['colors'])
