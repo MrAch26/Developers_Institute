@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    {{ block.super }}
+
+    {% include 'navbar.html' %}
+
+    <h1>Welcome Home {{user.first_name.upper}}!</h1>
+    
+    {% if user.last_name == "Doe" %} 
+    <h4> DDDDDOOOOEEEE </h4> 
+    {% endif %}
+
+    <h2>{{subjects.0.title}}</h2>
+
+    <img src="{% static 'images/giraffe.png' %}" width=200 height=200 alt="">
+    
+    {% for item in food %}
+    <p>{{item}}</p>
+    {% endfor %}
+
+
+{% endblock %}
