@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <h1>Who are you looking for ? </h1>
+
+    <form action="/search/done/" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Search">
+    </form>
+
+{% endblock %}
+

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <h2>Here are the details :</h2>
+
+{% if Person %}
+    {% for p in Person %}
+    <ul>
+        <li>{{ p }}</li>
+        <li>{{ p.phone_number }}</li>
+        <li>{{ p.email }}</li>
+        <li>{{ p.address }}</li>
+    </ul>
+    {% endfor %}
+
+{% else %}
+     <p>No details available</p>
+
+{% endif %}
+
+    <a href="/search/">Home</a>
+{% endblock %}
