@@ -1,9 +1,19 @@
 from django.shortcuts import render
-from .models import Student
+from .models import Student, Pet
 # Create your views here.
 def home(request):
-    students = Student.objects.all()
 
-    return render(request, 'home.html', {"students": students})
+    # new_student = Student(first_name="Dandoune")
+    # new_student.save()
+
+    students = Student.objects.all()
+    pets = Pet.objects.all()
+
+    context = {
+        "students": students,
+        "pets": pets
+    }
+
+    return render(request, 'home.html', context)
 
 

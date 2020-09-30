@@ -4,9 +4,11 @@
 
 {% block content %}
 <h1> hehehehe</h1>
+
 {% for student in students %}
 <h1>{{student}}</h1>
 {% endfor %}
+
 <h1> hehehehe {{students.0}} </h1>
 <img src="{% static 'images/giraffe.jpeg' %}"
 {% endblock content %}
