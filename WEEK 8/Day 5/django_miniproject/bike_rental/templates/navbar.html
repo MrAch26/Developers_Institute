@@ -1,0 +1,12 @@
+{% load static %}
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="/rent/home/" src="{% static 'images/logo-nav.png' %} class="brand-logo center"><img style="margin-left: 10px" src="{% static 'images/favicon.ico' %}"></a>
+      <ul id="nav-mobile" class="right">
+        <li><a href="{{ url 'rental.html' }}">Rental</a></li>
+        <li><a href="badges.html">Customer</a></li>
+        <li><a href="collapsible.html">Vehicle</a></li>
+      </ul>
+    </div>
+  </nav>
