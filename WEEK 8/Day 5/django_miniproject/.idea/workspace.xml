@@ -23,37 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0327ee69-2b5c-4b32-99d1-f3190958fa36" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/django_miniproject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bike_rental/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bike_rental/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bike_rental/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bike_rental/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bike_rental/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bike_rental/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bike_rental/static/images/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bike_rental/static/images/logo-nav.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bike_rental/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bike_rental/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bike_rental/templates/navbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bike_rental/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bike_rental/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bike_rental/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_miniproject/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_miniproject/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_miniproject/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_miniproject/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_miniproject/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_miniproject/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seed-todo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Day 4/school_proj2/students/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day 4/school_proj2/students/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bike_rental/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/bike_rental/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bike_rental/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/bike_rental/templates/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bike_rental/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/bike_rental/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +120,7 @@
       <workItem from="1601549950920" duration="2044000" />
       <workItem from="1601552241104" duration="470000" />
       <workItem from="1601552885917" duration="2853000" />
-      <workItem from="1601557777630" duration="9542000" />
+      <workItem from="1601557777630" duration="11531000" />
     </task>
     <servers />
   </component>

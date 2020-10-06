@@ -38,7 +38,6 @@ class RentalRate(models.Model):
     vehicle_type = models.ForeignKey(VehicleType, on_delete=models.CASCADE, null=True)
     vehicle_size = models.ForeignKey(VehicleSize, on_delete=models.CASCADE, null=True)
 
-#todo: supprimer tous les models et recommencer pour decimal field avec decimal_places=2, max_digits=5 !
 
 
 
