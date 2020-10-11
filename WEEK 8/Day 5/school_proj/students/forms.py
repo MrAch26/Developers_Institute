@@ -6,6 +6,7 @@ from django import forms
 #         print("Invalid Major")  
 #         raise forms.ValidationError(f'This is a bootcamp. Your major must be Computer Programming')
 
+
 class AddStudentForm(forms.Form):
 
       def sayHi(self):

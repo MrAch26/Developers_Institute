@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load bootstrap %}
+{% load static %}
+
+
+{% block content %}
+
+    {% include 'navbar.html' %}
+    <div class="container-fluid">
+        <br>
+        <h1>{{heading}}</h1>
+        <h2>{{subject.name}}</h2>
+        <p>Textbook: {{subject.textbook}}</p>
+        <p>Class: {{subject.class_room}}</p>
+        <hr>
+        <a class="btn btn-secondary" href="{% url 'subject-list' %}">Back</a>
+    </div>
+
+{% endblock %}

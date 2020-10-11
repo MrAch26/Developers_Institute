@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    {{ block.super }}
+
+    {% include 'navbar.html' %}
+    <div class="container-fluid">
+        <h1>Welcome Home!</h1>
+        
+        <h3>See our students</h3>
+        <a href="{% url 'students' %}">Students Page</a>
+
+        <h3>Add a Subject</h3>
+        <a href="{% url 'subject-add' %}">Add Subject</a>            
+
+    </div>
+{% endblock %}

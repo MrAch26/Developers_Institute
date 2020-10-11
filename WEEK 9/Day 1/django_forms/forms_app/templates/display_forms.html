@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The forms</title>
+</head>
+<body>
+
+    <h1>Here are the Snippets</h1>
+    <h2><a href="{% url 'add-snippet' %}">Add Snippet</a></h2>
+
+
+    {% for item in snippet_list  %}
+        <ol>
+            <a href="{% url 'snippet-details' item.id %}"><li>{{ item.name }}</li>{{ item.email }}</a>
+        </ol>
+    {% endfor %}
+
+</body>
+</html>

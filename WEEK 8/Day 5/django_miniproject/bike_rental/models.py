@@ -11,18 +11,20 @@ class Customer(models.Model):
     country = models.CharField(max_length=26)
 
 
+TYPE_CHOICES = [('b', 'Bike'), ('c', 'Car'), ('s', 'Scooter')]
 class VehicleType(models.Model):
-    name = models.CharField(max_length=10)
+    name = models.CharField(max_length=10, choices=TYPE_CHOICES, default='b')
 
 
+SIZE_CHOICES = [('s', 'Small'), ('m', 'Medium'), ('l', 'Large')]
 class VehicleSize(models.Model):
-    size = models.SmallIntegerField()
+    name = models.CharField(max_length=10, choices=SIZE_CHOICES, default='s')
 
 
 class Vehicle(models.Model):
     type = models.ForeignKey(VehicleType, on_delete=models.CASCADE, null=True)
     date_created = models.DateField()
-    real_cost = models.DecimalField(decimal_places=2, max_digits=5)
+    real_cost = models.FloatField()
     size = models.ForeignKey(VehicleSize, on_delete=models.CASCADE, null=True)
 
 
@@ -34,7 +36,7 @@ class Rental(models.Model):
 
 
 class RentalRate(models.Model):
-    daily_rate = models.DecimalField(decimal_places=2, max_digits=5)
+    daily_rate = models.FloatField()
     vehicle_type = models.ForeignKey(VehicleType, on_delete=models.CASCADE, null=True)
     vehicle_size = models.ForeignKey(VehicleSize, on_delete=models.CASCADE, null=True)
 

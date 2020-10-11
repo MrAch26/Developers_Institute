@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.urls import reverse
 
 # Create your views here.
 
@@ -6,4 +7,6 @@ from django.shortcuts import render
 def index(request):
     return render(request, 'index.html')
 
-# todo: continuer exe
+def rental(request):
+    return render(request, )
+

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9f40dd0e-cdc4-4af0-9c99-2f0d0031985a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Day 5/django_miniproject/bike_rental/templates/rental.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day 5/django_miniproject/seed.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day 5/school_proj/.idea/school_proj.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK 9/Day 1/django_forms/.idea/django_forms.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK 9/Day 1/film_project/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK 9/Day 1/film_project/film_app/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK 9/Day 1/film_project/film_app/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK 9/Day 1/film_project/film_app/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK 9/Day 1/film_project/film_app/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK 9/Day 1/film_project/film_app/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK 9/Day 1/film_project/film_app/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK 9/Day 1/film_project/film_app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Day 5/django_miniproject/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Day 5/django_miniproject/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Day 5/django_miniproject/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Day 5/django_miniproject/.idea/dataSources/3d1508ac-0f23-4af4-bd4b-a39aed0c6265.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Day 5/django_miniproject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Day 5/django_miniproject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Day 5/django_miniproject/bike_rental/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Day 5/django_miniproject/bike_rental/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Day 5/django_miniproject/bike_rental/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Day 5/django_miniproject/bike_rental/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Day 5/django_miniproject/bike_rental/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Day 5/django_miniproject/bike_rental/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Day 5/django_miniproject/bike_rental/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Day 5/django_miniproject/seed-todo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Day 5/school_proj/students/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Day 5/school_proj/students/forms.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="JupyterTrust" id="7d1996b7-da4b-4b5f-8337-58db15c66447" />
+  <component name="ProjectId" id="1ihQlCZlWKZRCqHVpgXig6b2mZh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="sqlite" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/forms_app/templates" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/forms_app/templates" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="django_forms" type="Python.DjangoServer" factoryName="Django server">
+      <module name="django_forms" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9f40dd0e-cdc4-4af0-9c99-2f0d0031985a" name="Default Changelist" comment="" />
+      <created>1602357494272</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602357494272</updated>
+      <workItem from="1602357496086" duration="5488000" />
+      <workItem from="1602399364536" duration="9283000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="193" y="310" key="#Notifications" timestamp="1602357573009">
+      <screen x="0" y="23" width="1920" height="989" />
+    </state>
+    <state x="193" y="310" key="#Notifications/-1440.170.1440.877/0.23.1920.989@0.23.1920.989" timestamp="1602357573009" />
+    <state x="240" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602397112788">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="240" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1440.170.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1602397112788" />
+    <state x="125" y="142" key="com.intellij.database.dbimport.ImportDialog" timestamp="1602397178789">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="125" y="142" key="com.intellij.database.dbimport.ImportDialog/-1440.170.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1602397178789" />
+    <state x="176" y="23" width="838" height="1032" key="search.everywhere.popup" timestamp="1602358796013">
+      <screen x="0" y="23" width="1920" height="988" />
+    </state>
+    <state x="176" y="23" width="838" height="1032" key="search.everywhere.popup/-1440.170.1440.877/0.23.1920.988@0.23.1920.988" timestamp="1602358796013" />
+  </component>
+</project>
