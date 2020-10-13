@@ -23,36 +23,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0327ee69-2b5c-4b32-99d1-f3190958fa36" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bike_rental/templates/rental.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seed.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../school_proj/.idea/school_proj.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../WEEK 9/Day 1/django_forms/.idea/django_forms.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../WEEK 9/Day 1/film_project/.idea/film_project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../WEEK 9/Day 1/film_project/account_app/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../WEEK 9/Day 1/film_project/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../WEEK 9/Day 1/film_project/film_app/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../WEEK 9/Day 1/film_project/film_app/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../WEEK 9/Day 1/film_project/film_app/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../WEEK 9/Day 1/film_project/film_app/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../WEEK 9/Day 1/film_project/film_app/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../WEEK 9/Day 1/film_project/film_app/static/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../WEEK 9/Day 1/film_project/film_app/templates/homepage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../WEEK 9/Day 1/film_project/film_app/templates/partials/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../WEEK 9/Day 1/film_project/film_app/templates/partials/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../WEEK 9/Day 1/film_project/film_app/templates/partials/navbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../WEEK 9/Day 1/film_project/film_app/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../WEEK 9/Day 1/film_project/film_app/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../WEEK 9/Day 1/film_project/film_app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3d1508ac-0f23-4af4-bd4b-a39aed0c6265.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bike_rental/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bike_rental/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/bike_rental/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bike_rental/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/bike_rental/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bike_rental/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/bike_rental/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seed-todo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../school_proj/students/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/../school_proj/students/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../WEEK 9/Day 1/django_forms/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../WEEK 9/Day 1/django_forms/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../WEEK 9/Day 1/django_forms/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../../../WEEK 9/Day 1/django_forms/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../WEEK 9/Day 1/django_forms/django_forms/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../WEEK 9/Day 1/django_forms/django_forms/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../WEEK 9/Day 1/django_forms/forms_app/templates/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../WEEK 9/Day 1/django_forms/forms_app/templates/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../WEEK 9/Day 1/django_forms/forms_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../WEEK 9/Day 1/django_forms/forms_app/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../WEEK 9/Day 1/django_forms/forms_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../WEEK 9/Day 1/django_forms/forms_app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../WEEK 9/Day 1/film_project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../WEEK 9/Day 1/film_project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../WEEK 9/Day 1/film_project/film_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../WEEK 9/Day 1/film_project/film_app/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +157,7 @@
       <workItem from="1602091970821" duration="16000" />
       <workItem from="1602356390777" duration="168000" />
       <workItem from="1602357010950" duration="25000" />
-      <workItem from="1602413982026" duration="6793000" />
+      <workItem from="1602413982026" duration="7641000" />
     </task>
     <servers />
   </component>
@@ -224,34 +203,34 @@
     </state>
     <state x="1029" y="240" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1440.170.1440.877/0.23.1920.994@0.23.1920.994" timestamp="1602414216736" />
     <state x="1029" y="236" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1601585051656" />
-    <state width="1868" height="193" key="GridCell.Tab.0.bottom" timestamp="1602420744537">
+    <state width="1868" height="193" key="GridCell.Tab.0.bottom" timestamp="1602502541637">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1868" height="193" key="GridCell.Tab.0.bottom/-1440.147.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1602420744537" />
+    <state width="1868" height="193" key="GridCell.Tab.0.bottom/-1440.147.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1602502541637" />
     <state width="1294" height="326" key="GridCell.Tab.0.bottom/-1440.170.1440.877/0.23.1920.991@0.23.1920.991" timestamp="1602419696704" />
     <state width="1294" height="255" key="GridCell.Tab.0.bottom/-1440.170.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1602416676457" />
     <state width="1294" height="255" key="GridCell.Tab.0.bottom/-1440.170.1440.877/0.23.1920.994@0.23.1920.994" timestamp="1602416271699" />
     <state width="769" height="292" key="GridCell.Tab.0.bottom/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1601585075523" />
-    <state width="1868" height="193" key="GridCell.Tab.0.center" timestamp="1602420744534">
+    <state width="1868" height="193" key="GridCell.Tab.0.center" timestamp="1602502541634">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1868" height="193" key="GridCell.Tab.0.center/-1440.147.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1602420744534" />
+    <state width="1868" height="193" key="GridCell.Tab.0.center/-1440.147.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1602502541634" />
     <state width="1294" height="326" key="GridCell.Tab.0.center/-1440.170.1440.877/0.23.1920.991@0.23.1920.991" timestamp="1602419696704" />
     <state width="1294" height="255" key="GridCell.Tab.0.center/-1440.170.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1602416676456" />
     <state width="1294" height="255" key="GridCell.Tab.0.center/-1440.170.1440.877/0.23.1920.994@0.23.1920.994" timestamp="1602416271698" />
     <state width="769" height="292" key="GridCell.Tab.0.center/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1601585075521" />
-    <state width="1868" height="193" key="GridCell.Tab.0.left" timestamp="1602420744533">
+    <state width="1868" height="193" key="GridCell.Tab.0.left" timestamp="1602502541630">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1868" height="193" key="GridCell.Tab.0.left/-1440.147.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1602420744533" />
+    <state width="1868" height="193" key="GridCell.Tab.0.left/-1440.147.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1602502541630" />
     <state width="1294" height="326" key="GridCell.Tab.0.left/-1440.170.1440.877/0.23.1920.991@0.23.1920.991" timestamp="1602419696703" />
     <state width="1294" height="255" key="GridCell.Tab.0.left/-1440.170.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1602416676456" />
     <state width="1294" height="255" key="GridCell.Tab.0.left/-1440.170.1440.877/0.23.1920.994@0.23.1920.994" timestamp="1602416271697" />
     <state width="769" height="292" key="GridCell.Tab.0.left/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1601585075520" />
-    <state width="1868" height="193" key="GridCell.Tab.0.right" timestamp="1602420744535">
+    <state width="1868" height="193" key="GridCell.Tab.0.right" timestamp="1602502541635">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1868" height="193" key="GridCell.Tab.0.right/-1440.147.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1602420744535" />
+    <state width="1868" height="193" key="GridCell.Tab.0.right/-1440.147.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1602502541635" />
     <state width="1294" height="326" key="GridCell.Tab.0.right/-1440.170.1440.877/0.23.1920.991@0.23.1920.991" timestamp="1602419696704" />
     <state width="1294" height="255" key="GridCell.Tab.0.right/-1440.170.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1602416676457" />
     <state width="1294" height="255" key="GridCell.Tab.0.right/-1440.170.1440.877/0.23.1920.994@0.23.1920.994" timestamp="1602416271698" />

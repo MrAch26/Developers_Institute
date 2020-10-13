@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load bootstrap %}
+{% load static %}
+
+
+{% block content %}
+
+    {% include 'navbar.html' %}
+    <div class="container-fluid">
+        <br>
+        <h2>Add a subject</h2>
+        <form method="POST" class="mt-4">
+            <div class="row">
+                <div class="col col-4">
+                    {% csrf_token %}
+                    {{form|bootstrap}}
+                    <input class="btn btn-primary" type="submit">
+                </div>
+            </div>
+        </form>
+    </div>
+
+{% endblock %}

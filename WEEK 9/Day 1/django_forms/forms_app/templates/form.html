@@ -7,8 +7,17 @@
     <title>Form</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
-
+<a href="accounts/logout/">logout</a>
+<a href="accounts/login/">login</a>
+<h2>Hey
+    {% if user.username %}
+    {{user.username}}
+    {% else %}
+    BRUUUUUU go sing up
+    {% endif %}
+</h2>
 <a href="{% url 'snippet' %}">Snippets</a>
+
 
 <body style="padding: 5%">
     {% crispy form form.helper %}

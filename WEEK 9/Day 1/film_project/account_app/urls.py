@@ -3,6 +3,6 @@ from django.urls import path, include
 from . import views
 
 urlpatterns = [
-    # path('homepage/', views.home, name='home')
-
+    path('', include('django.contrib.auth.urls')),
+    path('signup/', views.UserSignUp.as_view(), name="signup")
 ]

@@ -1,0 +1,32 @@
+h1 {
+    color: red;
+}
+
+
+#wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#student-wrapper {
+    display: flex;
+    
+    flex-direction: column;
+    padding: 20px;
+    border: 2px solid black;
+    width: 400px;
+}
+
+p.help-block {
+    color: green;
+}
+
+span.help-block {
+    color: red;
+}
+
+.pinkback {
+    background-color: pink;
+}
+
+

@@ -1,5 +1,37 @@
 {% extends 'partials/base.html' %}
-
+{% load static %}
 {% block content %}
- <h1>Test</h1>
+<div style="margin: 10px 26px">
+    <h1 class="text-center">Welcome {{ user.first_name }} !</h1>
+    <h2 class="text-center">Here are some of the Movies :</h2>
+<main>
+<div class="grid">
+{% if user.username %}
+{% for f in film %}
+{% for d in f.director.all %}
+{% for c in f.category.all %}
+
+    <div class="card text-center">
+    <div class="card-body">
+    <h5 class="card-title">{{ f.title }} <br> BY: <br>
+    {{d.first_name}} {{ d.last_name }}
+    </h5>
+    <h6 class="card-subtitle mb-2 text-muted">Date :{{ f.release_date }}</h6>
+    <p class="card-text">Category: {{ c.name }}</p>
+    <p class="card-text">Created in {{ f.created_in_country }}</p>
+    <a href="#" class="card-link">Modify Director</a>
+    <a href="#" class="card-link">Modify Film</a>
+    </div>
+    </div>
+
+{% endfor %}
+{% endfor %}
+{% endfor %}
+{% else %}
+    <h3>You have to <a href="{% url 'login' %}">Login</a> first ;)</h3>
+{% endif %}
+</div>
+</main>
+
+</div>
 {% endblock %}

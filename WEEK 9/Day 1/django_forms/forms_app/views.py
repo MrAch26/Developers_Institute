@@ -1,5 +1,7 @@
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
+from django.utils.decorators import method_decorator
 
 from .forms import ContactFrom, SnippetForm
 
@@ -7,6 +9,7 @@ from django.views.generic import ListView, DetailView, CreateView
 from django.views import View
 
 from .models import Snippet
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 
 def contact(request):
@@ -31,7 +34,8 @@ class AddSnippet(CreateView):
     success_url = reverse_lazy('snippet')
 
 
-class SnippetView(ListView):
+# @method_decorator(login_required, name='dispatch')
+class SnippetView(LoginRequiredMixin, ListView):
     model = Snippet
     template_name = 'display_forms.html'
 
@@ -39,7 +43,6 @@ class SnippetView(ListView):
 class SnippetDetail(DetailView):
     model = Snippet
     template_name = 'display_detail.html'
-    
 
 # class SnippetDetailView(View):
 #
