@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    {{ block.super }}
+
+    {% include 'navbar.html' %}
+    <div class="container-fluid">
+        
+        <h1>Welcome To the Students Page!</h1>
+        
+        <img src="{% static 'images/giraffe.png' %}" width=200 height=200 alt="">
+
+        <h1>Student List</h1>
+        <a href="{% url 'students-add' %}">Add a student</a>
+        <div id="wrapper">
+            {% for student in students %}
+            <div id="student-wrapper">
+                <a href="{% url 'students-details' id=student.id %}"><h3 class="text-success">{{student.first_name}} {{student.last_name}}</h3></a>
+            </div>
+            {% endfor %}
+            <hr>
+        </div>
+            <h1>Pets List</h1>
+            {% for pets in pets %}
+                <p>{{pets.name}} - {{pets.breed}},  Owned By: {{pets.owner}}</p>
+            {% endfor %}
+    </div>
+{% endblock %}

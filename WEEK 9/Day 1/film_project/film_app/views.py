@@ -1,19 +1,33 @@
 from django.contrib.auth.models import User
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
-from django.views.generic import View, DetailView, CreateView
+from django.views.generic import View, DetailView, CreateView, UpdateView
 
 from film_app.forms import AddFilmForm, AddDirectorForm
 from film_app.models import Director, Film
 
+import requests
+
+
 
 def home(request):
     film = Film.objects.all()
-    return render(request, 'homepage.html', {'film': film})
+    url = 'https://api.chucknorris.io/jokes/random'
+    response = requests.get(url)
+    chuck = response.json()
+    return render(request, 'homepage.html', {'film': film, 'chuck': chuck['value']})
+
 
 class Profile(DetailView):
     model = User
     template_name = 'profile.html'
+
+
+class FilmUpdate(UpdateView):
+    model = Film
+    form_class = AddFilmForm
+    template_name = 'film/update_film.html'
+    success_url = reverse_lazy('home')
 
 
 def add_film(request):
@@ -37,3 +51,4 @@ class AddDirector(CreateView):
     form_class = AddDirectorForm
     template_name = 'director/add_director.html'
     success_url = reverse_lazy('home')
+

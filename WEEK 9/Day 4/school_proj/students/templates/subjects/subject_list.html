@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load bootstrap %}
+{% load static %}
+
+
+{% block content %}
+
+    {% include 'navbar.html' %}
+    <div class="container-fluid">
+        <br>
+        <h2>Subjects</h2>
+        {% for subject in subject_list %}
+            <a href="{% url 'subject-details' subject.id %}"><h3>{{subject.name}}</h3></a>        
+        {% endfor%}
+        <hr>
+        <a class="btn btn-primary" href="{% url 'subject-add' %}">Add Subject</a>
+    </div>
+
+{% endblock %}
