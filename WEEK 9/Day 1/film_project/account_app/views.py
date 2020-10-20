@@ -15,15 +15,6 @@ class UserSignUp(CreateView):
     failed_message = "The User couldn't be added"
 
     def form_valid(self, form):
-        super().form_valid(form)
-
-        user = authenticate(self.request, username=form.cleaned_data['username'],
-                                          password=form.cleaned_data['password1'])
-        if user:
-            login(user)
-        return redirect('home')
-
-    def form_valid(self, form):
         user_to_add = form.cleaned_data
         # check the data we get when the form is valid
         print("user_to_add", user_to_add)

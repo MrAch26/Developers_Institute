@@ -9,13 +9,12 @@ from film_app.models import Director, Film
 import requests
 
 
-
 def home(request):
-    film = Film.objects.all()
+    films = Film.objects.all()
     url = 'https://api.chucknorris.io/jokes/random'
     response = requests.get(url)
     chuck = response.json()
-    return render(request, 'homepage.html', {'film': film, 'chuck': chuck['value']})
+    return render(request, 'homepage.html', {'films': films, 'chuck': chuck['value']})
 
 
 class Profile(DetailView):
@@ -27,6 +26,13 @@ class FilmUpdate(UpdateView):
     model = Film
     form_class = AddFilmForm
     template_name = 'film/update_film.html'
+    success_url = reverse_lazy('home')
+
+
+class DirectorUpdate(UpdateView):
+    model = Director
+    form_class = AddDirectorForm
+    template_name = 'director/update_director.html'
     success_url = reverse_lazy('home')
 
 

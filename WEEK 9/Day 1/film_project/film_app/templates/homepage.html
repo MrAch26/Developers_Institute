@@ -7,8 +7,7 @@
 <main>
 <div class="grid">
 {% if user.username %}
-{% for f in film %}
-
+{% for f in films %}
     <div class="card text-center">
     <div class="card-body">
     <h5 class="card-title">{{ f.title }} <br> BY: <br>
@@ -17,14 +16,12 @@
     <h6 class="card-subtitle mb-2 text-muted">Date :{{ f.release_date }}</h6>
     <p class="card-text">Category: {{ f.category.all|join:", " }}</p>
     <p class="card-text">Created in {{ f.created_in_country }}</p>
-    <a href="#" class="card-link">Modify Director</a>
-    <a href="{% url 'update_film1' f.id %}" class="card-link">Modify Film</a>
-{#      todo: URGENT to do fix why not update view !#}
+    <a href="{% url 'update_director' f.director.all.0.id %}" class="card-link">Modify Director</a>
+    <a href="{% url 'update_film' f.id %}" class="card-link">Modify Film</a>
         <div class="dropdown-divider"></div>
         <p>The movie is available in : {{ f.available_in_countries.all|join:", "}}</p>
     </div>
     </div>
-
 
 
 {% endfor %}
