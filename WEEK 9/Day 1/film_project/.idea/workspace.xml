@@ -23,17 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccb59e00-ca03-4dda-b847-82006822eb5a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../WEEK 8/Day 5/django_miniproject/.idea/dataSources/de6e724f-b455-424b-a8f4-4076f97bdb73.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../WEEK 8/Day 5/django_miniproject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../WEEK 8/Day 5/django_miniproject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/film_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/film_project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account_app/templates/registration/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/account_app/templates/registration/signup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/account_app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/film_app/templates/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/film_app/templates/homepage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/film_app/templates/partials/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/film_app/templates/partials/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/film_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/film_app/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/film_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/film_app/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,6 +189,7 @@
       <workItem from="1603110871158" duration="16000" />
       <workItem from="1603113390914" duration="51000" />
       <workItem from="1603131714345" duration="961000" />
+      <workItem from="1603268518607" duration="675000" />
     </task>
     <servers />
   </component>
