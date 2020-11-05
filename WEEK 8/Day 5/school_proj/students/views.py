@@ -30,12 +30,10 @@ def students_list(request):
 
 def add_student(request):
 
-
     if request.method == 'GET':
         form = AddStudentForm()
         form.sayHi()
         return render(request, 'add_student.html', {'form' : form})
-
 
     if request.method == 'POST':
         form = AddStudentForm(request.POST)

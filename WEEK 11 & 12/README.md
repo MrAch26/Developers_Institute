@@ -1,4 +1,5 @@
-# Week 11 & 12 - Final Project - YuGiOH 
+# Week 11 & 12 - Final Project - Casting Calls
 
-- YuGiOh Trading Card : https://github.com/MrAch26/yugioh_django_proj
+- Casting Calls : http://castingcallz.pythonanywhere.com/
+- GitHub : https://github.com/MrAch26/acting_project
 ---
