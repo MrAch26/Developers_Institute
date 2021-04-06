@@ -30,3 +30,11 @@ function backSpace() {
     }
 
 }
+
+
+function buyMilk(money) {
+  
+  return money - 2
+} 
+
+buyMilk(5)
